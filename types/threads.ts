@@ -27,5 +27,5 @@ export type User = {
   photo: string
   bio: string
   link?: string
-  followers: User[]
+  followers?: User[]
 }

@@ -4,6 +4,7 @@ import EditScreenInfo from "../../components/EditScreenInfo"
 import { Text, View } from "../../components/Themed"
 import Lottie from "lottie-react-native"
 import { useRef } from "react"
+import { createRandomUser } from "../../utils/generateDummyData"
 
 export default function TabOneScreen() {
   const animationRef = useRef<Lottie>(null)

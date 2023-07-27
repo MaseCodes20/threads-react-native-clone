@@ -1,13 +1,11 @@
 import { StyleSheet, View } from "react-native"
 import React from "react"
 import { Thread } from "../../types/threads"
-import { Text } from "../Themed"
-import { Image } from "expo-image"
-import { blurhash } from "../../utils/blur"
 import PostLeftSide from "./PostLeftSide"
 import PostHeading from "./PostHeading"
 import PostFooter from "./PostFooter"
 import BottomIcons from "./BottomIcons"
+import PostContent from "./PostContent"
 
 function ThreadsItem(thread: Thread) {
   return (
@@ -16,16 +14,7 @@ function ThreadsItem(thread: Thread) {
 
       <View style={{ flexShrink: 1, gap: 6 }}>
         <PostHeading name={thread.author.name} createdAt={thread.createdAt} verified={thread.author.verified} />
-        <Text>{thread.content}</Text>
-        {thread.image && (
-          <Image
-            source={thread.image}
-            style={{ width: "100%", minHeight: 300, borderRadius: 10 }}
-            placeholder={blurhash}
-            contentFit="cover"
-            transition={200}
-          />
-        )}
+        <PostContent content={thread.content} image={thread.image} />
         <BottomIcons />
         <PostFooter replies={thread.repliesCount} likes={thread.likesCount} />
       </View>

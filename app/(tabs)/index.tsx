@@ -6,7 +6,7 @@ import { Text, View } from "../../components/Themed"
 import Lottie from "lottie-react-native"
 import { useRef } from "react"
 import { ThreadsContext } from "../../context/threadContext"
-import ThreadsItem from "../../components/ThreadsItem"
+import ThreadsItem from "../../components/thread/ThreadsItem"
 
 export default function TabOneScreen() {
   const animationRef = useRef<Lottie>(null)

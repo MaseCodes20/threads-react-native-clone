@@ -1,5 +1,4 @@
 import { View } from "react-native"
-import React from "react"
 import { Feather, MaterialIcons } from "@expo/vector-icons"
 import { timeAgo } from "../../utils/timeAgo"
 import { Text } from "../Themed"

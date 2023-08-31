@@ -1,8 +1,5 @@
 import { useContext } from "react"
-import { Platform, RefreshControl, SafeAreaView, ScrollView, StyleSheet } from "react-native"
-
-import EditScreenInfo from "../../components/EditScreenInfo"
-import { Text, View } from "../../components/Themed"
+import { Platform, RefreshControl, SafeAreaView, ScrollView } from "react-native"
 import Lottie from "lottie-react-native"
 import { useRef } from "react"
 import { ThreadsContext } from "../../context/threadContext"
